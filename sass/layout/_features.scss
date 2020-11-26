@@ -5,35 +5,40 @@
 .features .section-title{
     margin: 0;
 }
-.features-list .title{
-    color: $title-text-color;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
+.features-list{
+    display: flex;
+    justify-content: center;
 
-    margin-top: 0px;
-    margin-bottom: 10px;
+    & .title{
+        color: $title-text-color;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    & li{
+        max-width: 270px;
+    }
+    
+    & li+li{
+        margin-left: 30px;
+    }
+
 }
+
 .text {
     line-height: 1.71;
     margin: 0px;
 }
-/* .features {
-    padding-top: 94px;
-    padding-bottom: 94px; 
-} */
-.features-list{
-    display: flex;
-    justify-content: center;
-}
-.features-list li+li{
-    margin-left: 30px;
-}
-.features-list li{
-    max-width: 270px;
-}
+
+
+
 .features-item::before{
     content: "";
     display: block;
